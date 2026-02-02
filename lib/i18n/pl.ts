@@ -1,4 +1,4 @@
-import { Translations } from "./types";
+import { Translations } from "./types"
 
 export const pl: Translations = {
   nav: {
@@ -15,7 +15,8 @@ export const pl: Translations = {
     title: "Adwokat",
     name: "Anatoliy Sarnavskiy",
     subtitle: "Obrona w sprawach przestępstw gospodarczych",
-    description: "Profesjonalna obrona przed presją śledczych, prokuratury, SBU i DBR. Specjalizacja: budownictwo i zamówienia publiczne.",
+    description:
+      "Profesjonalna obrona przed presją śledczych, prokuratury, SBU i DBR. Specjalizacja: budownictwo i zamówienia publiczne.",
     slogan: ["Szybko.", "Poufnie.", "Skutecznie."],
     urgent: "Pilnie potrzebny adwokat",
     consultation: "Uzyskać konsultację",
@@ -34,7 +35,8 @@ export const pl: Translations = {
       },
       {
         title: "Strategia obrony",
-        description: "Opracowanie kompleksowej strategii obrony dla Twojego biznesu",
+        description:
+          "Opracowanie kompleksowej strategii obrony dla Twojego biznesu",
       },
       {
         title: "Kompleksowa ochrona biznesu",
@@ -86,11 +88,14 @@ export const pl: Translations = {
   },
   materials: {
     title: "Darmowe materiały",
-    subtitle: "Przydatne listy kontrolne i przewodniki do ochrony Twojego biznesu",
+    subtitle:
+      "Przydatne listy kontrolne i przewodniki do ochrony Twojego biznesu",
     download: "Pobierz PDF",
     getMaterial: "Otrzymaj materiał",
-    description: "Aby otrzymać materiały, musisz podać swój email. Po potwierdzeniu otrzymasz link do pobrania.",
-    emailRequired: "Aby pobrać materiał, podaj swój email. Link do pobrania zostanie wysłany na Twój email.",
+    description:
+      "Aby otrzymać materiały, musisz podać swój email. Po potwierdzeniu otrzymasz link do pobrania.",
+    emailRequired:
+      "Aby pobrać materiał, podaj swój email. Link do pobrania zostanie wysłany na Twój email.",
   },
   contact: {
     title: "Kontakt",
@@ -110,22 +115,26 @@ export const pl: Translations = {
       {
         number: "1",
         title: "Zostawiasz wniosek",
-        description: "Wypełnij formularz poniżej swoimi danymi kontaktowymi i opisem sytuacji",
+        description:
+          "Wypełnij formularz poniżej swoimi danymi kontaktowymi i opisem sytuacji",
       },
       {
         number: "2",
         title: "Wyjaśniamy szczegóły",
-        description: "Skontaktuję się z Tobą, aby wyjaśnić szczegóły i omówić sytuację",
+        description:
+          "Skontaktuję się z Tobą, aby wyjaśnić szczegóły i omówić sytuację",
       },
       {
         number: "3",
         title: "Plan działania i strategia",
-        description: "Opracowujemy kompleksową strategię obrony i plan działania",
+        description:
+          "Opracowujemy kompleksową strategię obrony i plan działania",
       },
       {
         number: "4",
         title: "Uzgodnienie formatu",
-        description: "Omawiamy format współpracy: jednorazowa konsultacja lub stałe wsparcie",
+        description:
+          "Omawiamy format współpracy: jednorazowa konsultacja lub stałe wsparcie",
       },
     ],
     leaveRequest: "Zostaw wniosek",
@@ -147,11 +156,13 @@ export const pl: Translations = {
     send: "Wyślij wniosek",
     sending: "Wysyłanie...",
     submit: "Wyślij",
-    success: "Dziękujemy! Twój wniosek został wysłany. Wkrótce się z Tobą skontaktujemy.",
+    success:
+      "Dziękujemy! Twój wniosek został wysłany. Wkrótce się z Tobą skontaktujemy.",
     error: "Błąd wysyłki. Spróbuj ponownie lub zadzwoń do nas bezpośrednio.",
     required: "wymagane",
     invalidEmail: "Nieprawidłowy email",
-    successMessage: "Zapytanie wysłane pomyślnie! Skontaktuję się z Tobą wkrótce.",
+    successMessage:
+      "Zapytanie wysłane pomyślnie! Skontaktuję się z Tobą wkrótce.",
     errorMessage: "Błąd wysyłania. Spróbuj ponownie lub zadzwoń bezpośrednio.",
   },
   about: {
@@ -169,37 +180,24 @@ export const pl: Translations = {
     },
     specialization: {
       title: "Specjalizacja",
-      text1: "Profesjonalna obrona w sprawach przestępstw gospodarczych. Specjalizuję się w ochronie przedsiębiorców i menedżerów przed presją śledczych, prokuratury, SBU i DBR.",
-      text2: "Szczególny nacisk na sprawy związane z budownictwem i zamówieniami publicznymi.",
+      text1:
+        "Profesjonalna obrona w sprawach przestępstw gospodarczych. Specjalizuję się w ochronie przedsiębiorców i menedżerów przed presją śledczych, prokuratury, SBU i DBR.",
+      text2:
+        "Szczególny nacisk na sprawy związane z budownictwem i zamówieniami publicznymi.",
     },
     approach: {
       title: "Podejście do pracy",
       text: "Każda sprawa dla mnie to indywidualne podejście i kompleksowa strategia obrony. Pracuję szybko, poufnie i skutecznie, wykorzystując swoje doświadczenie, aby osiągnąć najlepsze wyniki dla klientów.",
     },
   },
-  servicesPage: {
-    title: "Moje usługi",
-    subtitle: "Kompleksowa profesjonalna obrona w sprawach przestępstw gospodarczych i wsparcie biznesu w złożonych sytuacjach prawnych",
-  },
-  casesPage: {
-    title: "Udane sprawy",
-    subtitle: "Prawdziwe wyniki pracy i ochrony interesów klientów",
-    problem: "Problem",
-    risks: "Ryzyka",
-    actions: "Działania adwokata",
-    result: "Wynik",
-    critical: "Co było krytycznie ważne",
-  },
-  blogPage: {
-    title: "Blog",
-    subtitle: "Przydatne artykuły i porady dotyczące obrony w sprawach przestępstw gospodarczych",
-  },
   footer: {
-    description: "Profesjonalna obrona w sprawach przestępstw gospodarczych. Szybko. Poufnie. Skutecznie.",
+    description:
+      "Profesjonalna obrona w sprawach przestępstw gospodarczych. Szybko. Poufnie. Skutecznie.",
     menu: "Menu",
     services: "Usługi",
     contact: "Kontakt",
-    copyright: "© {year} Adwokat Anatoliy Sarnavskiy. Wszelkie prawa zastrzeżone.",
+    copyright:
+      "© {year} Adwokat Anatoliy Sarnavskiy. Wszelkie prawa zastrzeżone.",
   },
   modal: {
     consultation: "Uzyskaj konsultację",
@@ -216,6 +214,9 @@ export const pl: Translations = {
     consultation: "Konsultacja",
   },
   servicesPage: {
+    title: "Moje usługi",
+    subtitle:
+      "Kompleksowa profesjonalna obrona w sprawach przestępstw gospodarczych i wsparcie biznesu w złożonych sytuacjach prawnych",
     allServices: "Wszystkie usługi",
     serviceDetails: "Szczegóły",
     serviceItems: [
@@ -242,7 +243,8 @@ export const pl: Translations = {
       {
         id: "zahyst-190-191",
         title: "Obrona według art. 190, 191 KK",
-        description: "Specjalistyczna obrona w sprawach przestępstw gospodarczych",
+        description:
+          "Specjalistyczna obrona w sprawach przestępstw gospodarczych",
       },
       {
         id: "zahyst-366-368-369",
@@ -262,7 +264,8 @@ export const pl: Translations = {
       {
         id: "sprovadzhennya",
         title: "Udział w działaniach śledczych",
-        description: "Wsparcie podczas przeszukań, przesłuchań i innych działań",
+        description:
+          "Wsparcie podczas przeszukań, przesłuchań i innych działań",
       },
       {
         id: "abonentske",
@@ -272,10 +275,19 @@ export const pl: Translations = {
     ],
   },
   casesPage: {
+    title: "Udane sprawy",
+    subtitle: "Prawdziwe wyniki pracy i ochrony interesów klientów",
+    problem: "Problem",
+    risks: "Ryzyka",
+    actions: "Działania adwokata",
+    result: "Wynik",
+    critical: "Co było krytycznie ważne",
     cases: [
       {
-        problem: "Klient został oskarżony według art. 191 KK za działalność w budownictwie",
-        risks: "Art. 191 KK - przywłaszczenie, roztrwonienie mienia. Możliwa kara do 8 lat pozbawienia wolności",
+        problem:
+          "Klient został oskarżony według art. 191 KK za działalność w budownictwie",
+        risks:
+          "Art. 191 KK - przywłaszczenie, roztrwonienie mienia. Możliwa kara do 8 lat pozbawienia wolności",
         actions: [
           "Przeprowadzono szczegółową analizę dokumentów i działalności klienta",
           "Zidentyfikowano naruszenia proceduralne przez śledczych",
@@ -283,10 +295,12 @@ export const pl: Translations = {
           "Zaskarżono nielegalne działania śledczych",
         ],
         result: "Sprawa zamknięta, zarzuty wycofane",
-        critical: "Krytyczne było szybkie interwencja i prawidłowa strategia obrony od pierwszych dni",
+        critical:
+          "Krytyczne było szybkie interwencja i prawidłowa strategia obrony od pierwszych dni",
       },
       {
-        problem: "Przedsiębiorca był prześladowany za udział w zamówieniach publicznych, przeprowadzono przeszukania",
+        problem:
+          "Przedsiębiorca był prześladowany za udział w zamówieniach publicznych, przeprowadzono przeszukania",
         risks: "Presja ze strony śledczych, możliwe zarzuty według art. 191 KK",
         actions: [
           "Wsparcie podczas przeszukań",
@@ -295,10 +309,12 @@ export const pl: Translations = {
           "Zaskarżenie nielegalnych decyzji",
         ],
         result: "Zarzuty wycofane, sprawa zamknięta",
-        critical: "Ważne było profesjonalne wsparcie podczas przeszukań i prawidłowa dokumentacja naruszeń",
+        critical:
+          "Ważne było profesjonalne wsparcie podczas przeszukań i prawidłowa dokumentacja naruszeń",
       },
       {
-        problem: "Kompleksowa ochrona przedsiębiorstwa podczas kontroli i presji ze strony organów ścigania",
+        problem:
+          "Kompleksowa ochrona przedsiębiorstwa podczas kontroli i presji ze strony organów ścigania",
         risks: "Możliwe zarzuty przestępstw gospodarczych, presja na biznes",
         actions: [
           "Przeprowadzono audyt ryzyka",
@@ -307,34 +323,42 @@ export const pl: Translations = {
           "Ochrona interesów klienta na wszystkich etapach",
         ],
         result: "Ryzyka zminimalizowane, biznes kontynuuje działalność",
-        critical: "Krytyczne było proaktywne podejście i kompleksowa strategia obrony",
+        critical:
+          "Krytyczne było proaktywne podejście i kompleksowa strategia obrony",
       },
     ],
   },
   blogPage: {
+    title: "Blog",
+    subtitle:
+      "Przydatne artykuły i porady dotyczące obrony w sprawach przestępstw gospodarczych",
     posts: [
       {
         slug: "yak-povodytys-pid-chas-obshuku",
         title: "Jak zachowywać się podczas przeszukania",
-        excerpt: "Praktyczne porady dotyczące zachowania podczas przeszukań i zajęć dokumentów. Co można, a czego nie można robić.",
+        excerpt:
+          "Praktyczne porady dotyczące zachowania podczas przeszukań i zajęć dokumentów. Co można, a czego nie można robić.",
         category: "Przeszukanie",
       },
       {
         slug: "stattya-191-kk-shcho-potribno-znaty",
         title: "Art. 191 KK: Co trzeba wiedzieć",
-        excerpt: "Szczegółowa analiza art. 191 Kodeksu Karnego Ukrainy i sposobów ochrony przed zarzutami.",
+        excerpt:
+          "Szczegółowa analiza art. 191 Kodeksu Karnego Ukrainy i sposobów ochrony przed zarzutami.",
         category: "191 KK",
       },
       {
         slug: "derzhzakupivli-ta-ryzyky",
         title: "Zamówienia publiczne i ryzyka",
-        excerpt: "Jak chronić swój biznes podczas udziału w przetargach i unikać problemów z organami ścigania.",
+        excerpt:
+          "Jak chronić swój biznes podczas udziału w przetargach i unikać problemów z organami ścigania.",
         category: "Budownictwo/Przetargi",
       },
       {
         slug: "yak-povodytys-pid-chas-dopytu",
         title: "Jak zachowywać się podczas przesłuchania",
-        excerpt: "Praktyczne zalecenia dotyczące zachowania podczas przesłuchania i ochrony swoich praw.",
+        excerpt:
+          "Praktyczne zalecenia dotyczące zachowania podczas przesłuchania i ochrony swoich praw.",
         category: "Przesłuchanie",
       },
     ],
@@ -342,16 +366,21 @@ export const pl: Translations = {
   materialsPage: {
     materials: [
       {
-        title: "10 powodów, aby skontaktować się z adwokatem w sprawie art. 191 KK",
-        description: "Szczegółowa lista kontrolna powodów, gdy potrzebna jest profesjonalna pomoc adwokata",
+        title:
+          "10 powodów, aby skontaktować się z adwokatem w sprawie art. 191 KK",
+        description:
+          "Szczegółowa lista kontrolna powodów, gdy potrzebna jest profesjonalna pomoc adwokata",
       },
       {
         title: "Jak zachowywać się podczas przeszukania",
-        description: "Praktyczny przewodnik dotyczący zachowania podczas przeszukań i ochrony swoich praw",
+        description:
+          "Praktyczny przewodnik dotyczący zachowania podczas przeszukań i ochrony swoich praw",
       },
       {
-        title: "Lista kontrolna adwokata dla wykonawców w zamówieniach publicznych",
-        description: "Kompleksowa lista kontrolna dla wykonawców pracujących z zamówieniami publicznymi",
+        title:
+          "Lista kontrolna adwokata dla wykonawców w zamówieniach publicznych",
+        description:
+          "Kompleksowa lista kontrolna dla wykonawców pracujących z zamówieniami publicznymi",
       },
     ],
   },
@@ -369,7 +398,8 @@ export const pl: Translations = {
     title: "Pilnie potrzebny",
     titleHighlight: "adwokat?",
     subtitle: "Obrona w sprawach przestępstw gospodarczych",
-    description: "Profesjonalna obrona przed presją śledczych, prokuratury, SBU i DBR. Operacyjna pomoc 24/7.",
+    description:
+      "Profesjonalna obrona przed presją śledczych, prokuratury, SBU i DBR. Operacyjna pomoc 24/7.",
     urgent: "Pilnie potrzebny adwokat",
     callNow: "Zadzwoń teraz",
     getConsultation: "Uzyskać konsultację",
@@ -394,5 +424,4 @@ export const pl: Translations = {
     description: "Strona, której szukasz, nie istnieje.",
     backHome: "Powrót do strony głównej",
   },
-};
-
+}

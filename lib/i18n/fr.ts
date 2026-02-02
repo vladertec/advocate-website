@@ -1,4 +1,4 @@
-import { Translations } from "./types";
+import { Translations } from "./types"
 
 export const fr: Translations = {
   nav: {
@@ -15,7 +15,8 @@ export const fr: Translations = {
     title: "Avocat",
     name: "Anatoliy Sarnavskiy",
     subtitle: "Défense en matière de crimes économiques",
-    description: "Défense professionnelle contre la pression des enquêteurs, du parquet, du SBU et du DBR. Spécialisation: construction et marchés publics.",
+    description:
+      "Défense professionnelle contre la pression des enquêteurs, du parquet, du SBU et du DBR. Spécialisation: construction et marchés publics.",
     slogan: ["Rapidement.", "Confidentiellement.", "Efficacement."],
     urgent: "Besoin urgent d'un avocat",
     consultation: "Obtenir une consultation",
@@ -26,19 +27,23 @@ export const fr: Translations = {
     items: [
       {
         title: "Protection lors des perquisitions",
-        description: "Accompagnement et protection lors des perquisitions et saisies de documents",
+        description:
+          "Accompagnement et protection lors des perquisitions et saisies de documents",
       },
       {
         title: "Protection lors des interrogatoires",
-        description: "Soutien professionnel et protection lors des interrogatoires",
+        description:
+          "Soutien professionnel et protection lors des interrogatoires",
       },
       {
         title: "Stratégie de défense",
-        description: "Développement d'une stratégie de défense complète pour votre entreprise",
+        description:
+          "Développement d'une stratégie de défense complète pour votre entreprise",
       },
       {
         title: "Protection complète de l'entreprise",
-        description: "Accompagnement complet de l'entreprise dans des situations difficiles",
+        description:
+          "Accompagnement complet de l'entreprise dans des situations difficiles",
       },
     ],
   },
@@ -48,7 +53,10 @@ export const fr: Translations = {
       { title: "24/7", description: "Disponibilité 24h/24" },
       { title: "30+ ans", description: "Expérience professionnelle" },
       { title: "Confidentialité", description: "Secret absolu" },
-      { title: "Expérience dans les autorités", description: "Ancien enquêteur" },
+      {
+        title: "Expérience dans les autorités",
+        description: "Ancien enquêteur",
+      },
     ],
   },
   quickOffers: {
@@ -58,17 +66,20 @@ export const fr: Translations = {
   },
   cases: {
     title: "Cas réussis",
-    subtitle: "Résultats réels du travail et de la protection des intérêts des clients",
+    subtitle:
+      "Résultats réels du travail et de la protection des intérêts des clients",
     allCases: "Tous les cas",
     items: [
       {
         title: "Affaire de construction",
-        description: "Protection de l'entrepreneur contre les accusations selon l'article 191 CC",
+        description:
+          "Protection de l'entrepreneur contre les accusations selon l'article 191 CC",
         result: "Affaire classée",
       },
       {
         title: "Affaire de marchés publics",
-        description: "Protection contre la pression des enquêteurs lors des perquisitions",
+        description:
+          "Protection contre la pression des enquêteurs lors des perquisitions",
         result: "Accusations abandonnées",
       },
       {
@@ -86,11 +97,14 @@ export const fr: Translations = {
   },
   materials: {
     title: "Matériaux gratuits",
-    subtitle: "Listes de contrôle et guides utiles pour protéger votre entreprise",
+    subtitle:
+      "Listes de contrôle et guides utiles pour protéger votre entreprise",
     download: "Télécharger PDF",
     getMaterial: "Obtenir le matériel",
-    description: "Pour recevoir les matériaux, vous devez laisser votre email. Après confirmation, vous recevrez un lien de téléchargement.",
-    emailRequired: "Pour télécharger le matériel, veuillez laisser votre email. Le lien de téléchargement vous sera envoyé par email.",
+    description:
+      "Pour recevoir les matériaux, vous devez laisser votre email. Après confirmation, vous recevrez un lien de téléchargement.",
+    emailRequired:
+      "Pour télécharger le matériel, veuillez laisser votre email. Le lien de téléchargement vous sera envoyé par email.",
   },
   contact: {
     title: "Contact",
@@ -110,22 +124,26 @@ export const fr: Translations = {
       {
         number: "1",
         title: "Vous laissez une demande",
-        description: "Remplissez le formulaire ci-dessous avec vos coordonnées et description de la situation",
+        description:
+          "Remplissez le formulaire ci-dessous avec vos coordonnées et description de la situation",
       },
       {
         number: "2",
         title: "Nous clarifions les détails",
-        description: "Je vous contacterai pour clarifier les détails et discuter de la situation",
+        description:
+          "Je vous contacterai pour clarifier les détails et discuter de la situation",
       },
       {
         number: "3",
         title: "Plan d'action et stratégie",
-        description: "Nous développons une stratégie de défense complète et un plan d'action",
+        description:
+          "Nous développons une stratégie de défense complète et un plan d'action",
       },
       {
         number: "4",
         title: "Accord sur le format",
-        description: "Nous discutons du format de coopération: consultation ponctuelle ou accompagnement continu",
+        description:
+          "Nous discutons du format de coopération: consultation ponctuelle ou accompagnement continu",
       },
     ],
     leaveRequest: "Laisser une demande",
@@ -147,12 +165,15 @@ export const fr: Translations = {
     send: "Envoyer la demande",
     sending: "Envoi...",
     submit: "Envoyer",
-    success: "Merci! Votre demande a été envoyée. Nous vous contacterons bientôt.",
+    success:
+      "Merci! Votre demande a été envoyée. Nous vous contacterons bientôt.",
     error: "Erreur d'envoi. Veuillez réessayer ou nous appeler directement.",
     required: "requis",
     invalidEmail: "Email invalide",
-    successMessage: "Demande envoyée avec succès ! Je vous contacterai bientôt.",
-    errorMessage: "Erreur lors de l'envoi. Veuillez réessayer ou appeler directement.",
+    successMessage:
+      "Demande envoyée avec succès ! Je vous contacterai bientôt.",
+    errorMessage:
+      "Erreur lors de l'envoi. Veuillez réessayer ou appeler directement.",
   },
   about: {
     title: "À propos",
@@ -169,33 +190,19 @@ export const fr: Translations = {
     },
     specialization: {
       title: "Spécialisation",
-      text1: "Défense professionnelle en matière de crimes économiques. Je me spécialise dans la protection des entrepreneurs et des dirigeants contre la pression des enquêteurs, du parquet, du SBU et du DBR.",
-      text2: "Focus particulier sur les affaires liées à la construction et aux marchés publics.",
+      text1:
+        "Défense professionnelle en matière de crimes économiques. Je me spécialise dans la protection des entrepreneurs et des dirigeants contre la pression des enquêteurs, du parquet, du SBU et du DBR.",
+      text2:
+        "Focus particulier sur les affaires liées à la construction et aux marchés publics.",
     },
     approach: {
       title: "Approche du travail",
       text: "Chaque affaire pour moi est une approche individuelle et une stratégie de défense complète. Je travaille rapidement, confidentiellement et efficacement, en utilisant mon expérience pour obtenir les meilleurs résultats pour les clients.",
     },
   },
-  servicesPage: {
-    title: "Mes services",
-    subtitle: "Défense professionnelle complète en matière de crimes économiques et soutien aux entreprises dans des situations juridiques complexes",
-  },
-  casesPage: {
-    title: "Cas réussis",
-    subtitle: "Résultats réels du travail et de la protection des intérêts des clients",
-    problem: "Problème",
-    risks: "Risques",
-    actions: "Actions de l'avocat",
-    result: "Résultat",
-    critical: "Ce qui était critique",
-  },
-  blogPage: {
-    title: "Blog",
-    subtitle: "Articles utiles et conseils sur la défense en matière de crimes économiques",
-  },
   footer: {
-    description: "Défense professionnelle en matière de crimes économiques. Rapidement. Confidentiellement. Efficacement.",
+    description:
+      "Défense professionnelle en matière de crimes économiques. Rapidement. Confidentiellement. Efficacement.",
     menu: "Menu",
     services: "Services",
     contact: "Contact",
@@ -216,18 +223,23 @@ export const fr: Translations = {
     consultation: "Consultation",
   },
   servicesPage: {
+    title: "Mes services",
+    subtitle:
+      "Défense professionnelle complète en matière de crimes économiques et soutien aux entreprises dans des situations juridiques complexes",
     allServices: "Tous les services",
     serviceDetails: "Détails",
     serviceItems: [
       {
         id: "anti-obshuk",
         title: "Anti-Perquisition",
-        description: "Protection lors des perquisitions et saisies de documents",
+        description:
+          "Protection lors des perquisitions et saisies de documents",
       },
       {
         id: "audit-191",
         title: "Audit 191 CC",
-        description: "Audit des risques selon l'article 191 du Code pénal ukrainien",
+        description:
+          "Audit des risques selon l'article 191 du Code pénal ukrainien",
       },
       {
         id: "zahyst-kerivnyka",
@@ -262,7 +274,8 @@ export const fr: Translations = {
       {
         id: "sprovadzhennya",
         title: "Participation aux actions d'enquête",
-        description: "Accompagnement lors des perquisitions, interrogatoires et autres actions",
+        description:
+          "Accompagnement lors des perquisitions, interrogatoires et autres actions",
       },
       {
         id: "abonentske",
@@ -272,10 +285,20 @@ export const fr: Translations = {
     ],
   },
   casesPage: {
+    title: "Cas réussis",
+    subtitle:
+      "Résultats réels du travail et de la protection des intérêts des clients",
+    problem: "Problème",
+    risks: "Risques",
+    actions: "Actions de l'avocat",
+    result: "Résultat",
+    critical: "Ce qui était critique",
     cases: [
       {
-        problem: "Le client a été accusé selon l'article 191 CC pour des activités dans la construction",
-        risks: "Article 191 CC - appropriation, détournement. Peine possible jusqu'à 8 ans d'emprisonnement",
+        problem:
+          "Le client a été accusé selon l'article 191 CC pour des activités dans la construction",
+        risks:
+          "Article 191 CC - appropriation, détournement. Peine possible jusqu'à 8 ans d'emprisonnement",
         actions: [
           "Analyse détaillée des documents et activités du client effectuée",
           "Violations procédurales par les enquêteurs identifiées",
@@ -283,11 +306,14 @@ export const fr: Translations = {
           "Actions illégales des enquêteurs contestées",
         ],
         result: "Affaire classée, accusations abandonnées",
-        critical: "Critique était l'intervention rapide et la stratégie de défense correcte dès les premiers jours",
+        critical:
+          "Critique était l'intervention rapide et la stratégie de défense correcte dès les premiers jours",
       },
       {
-        problem: "L'entrepreneur a été poursuivi pour participation aux marchés publics, des perquisitions ont été effectuées",
-        risks: "Pression des enquêteurs, accusations possibles selon l'article 191 CC",
+        problem:
+          "L'entrepreneur a été poursuivi pour participation aux marchés publics, des perquisitions ont été effectuées",
+        risks:
+          "Pression des enquêteurs, accusations possibles selon l'article 191 CC",
         actions: [
           "Accompagnement lors des perquisitions",
           "Protection des droits du client lors des interrogatoires",
@@ -295,11 +321,14 @@ export const fr: Translations = {
           "Appel des décisions illégales",
         ],
         result: "Accusations abandonnées, affaire classée",
-        critical: "Important était le soutien professionnel lors des perquisitions et la documentation appropriée des violations",
+        critical:
+          "Important était le soutien professionnel lors des perquisitions et la documentation appropriée des violations",
       },
       {
-        problem: "Protection complète de l'entreprise lors des inspections et pression des forces de l'ordre",
-        risks: "Accusations possibles de crimes économiques, pression sur l'entreprise",
+        problem:
+          "Protection complète de l'entreprise lors des inspections et pression des forces de l'ordre",
+        risks:
+          "Accusations possibles de crimes économiques, pression sur l'entreprise",
         actions: [
           "Audit des risques effectué",
           "Stratégie de défense développée",
@@ -307,34 +336,42 @@ export const fr: Translations = {
           "Protection des intérêts du client à tous les stades",
         ],
         result: "Risques minimisés, l'entreprise continue de fonctionner",
-        critical: "Critique était l'approche proactive et la stratégie de défense complète",
+        critical:
+          "Critique était l'approche proactive et la stratégie de défense complète",
       },
     ],
   },
   blogPage: {
+    title: "Blog",
+    subtitle:
+      "Articles utiles et conseils sur la défense en matière de crimes économiques",
     posts: [
       {
         slug: "yak-povodytys-pid-chas-obshuku",
         title: "Comment se comporter lors d'une perquisition",
-        excerpt: "Conseils pratiques sur le comportement lors des perquisitions et saisies de documents. Ce que vous pouvez et ne pouvez pas faire.",
+        excerpt:
+          "Conseils pratiques sur le comportement lors des perquisitions et saisies de documents. Ce que vous pouvez et ne pouvez pas faire.",
         category: "Perquisition",
       },
       {
         slug: "stattya-191-kk-shcho-potribno-znaty",
         title: "Article 191 CC: Ce que vous devez savoir",
-        excerpt: "Analyse détaillée de l'article 191 du Code pénal ukrainien et moyens de protection contre les accusations.",
+        excerpt:
+          "Analyse détaillée de l'article 191 du Code pénal ukrainien et moyens de protection contre les accusations.",
         category: "191 CC",
       },
       {
         slug: "derzhzakupivli-ta-ryzyky",
         title: "Marchés publics et risques",
-        excerpt: "Comment protéger votre entreprise lors de la participation aux appels d'offres et éviter les problèmes avec les forces de l'ordre.",
+        excerpt:
+          "Comment protéger votre entreprise lors de la participation aux appels d'offres et éviter les problèmes avec les forces de l'ordre.",
         category: "Construction/Appels d'offres",
       },
       {
         slug: "yak-povodytys-pid-chas-dopytu",
         title: "Comment se comporter lors d'un interrogatoire",
-        excerpt: "Recommandations pratiques sur le comportement lors d'un interrogatoire et la protection de vos droits.",
+        excerpt:
+          "Recommandations pratiques sur le comportement lors d'un interrogatoire et la protection de vos droits.",
         category: "Interrogatoire",
       },
     ],
@@ -343,15 +380,19 @@ export const fr: Translations = {
     materials: [
       {
         title: "10 raisons de contacter un avocat pour l'article 191 CC",
-        description: "Liste de contrôle détaillée des raisons lorsque l'assistance professionnelle d'un avocat est nécessaire",
+        description:
+          "Liste de contrôle détaillée des raisons lorsque l'assistance professionnelle d'un avocat est nécessaire",
       },
       {
         title: "Comment se comporter lors d'une perquisition",
-        description: "Guide pratique sur le comportement lors des perquisitions et la protection de vos droits",
+        description:
+          "Guide pratique sur le comportement lors des perquisitions et la protection de vos droits",
       },
       {
-        title: "Liste de contrôle de l'avocat pour les entrepreneurs dans les marchés publics",
-        description: "Liste de contrôle complète pour les entrepreneurs travaillant avec les marchés publics",
+        title:
+          "Liste de contrôle de l'avocat pour les entrepreneurs dans les marchés publics",
+        description:
+          "Liste de contrôle complète pour les entrepreneurs travaillant avec les marchés publics",
       },
     ],
   },
@@ -369,7 +410,8 @@ export const fr: Translations = {
     title: "Besoin urgent",
     titleHighlight: "d'un avocat?",
     subtitle: "Défense en matière de crimes économiques",
-    description: "Défense professionnelle contre la pression des enquêteurs, du parquet, du SBU et du DBR. Assistance opérationnelle 24/7.",
+    description:
+      "Défense professionnelle contre la pression des enquêteurs, du parquet, du SBU et du DBR. Assistance opérationnelle 24/7.",
     urgent: "Besoin urgent d'un avocat",
     callNow: "Appeler maintenant",
     getConsultation: "Obtenir une consultation",
@@ -394,5 +436,4 @@ export const fr: Translations = {
     description: "La page que vous recherchez n'existe pas.",
     backHome: "Retour à l'accueil",
   },
-};
-
+}

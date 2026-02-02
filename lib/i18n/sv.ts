@@ -1,4 +1,4 @@
-import { Translations } from "./types";
+import { Translations } from "./types"
 
 export const sv: Translations = {
   nav: {
@@ -15,7 +15,8 @@ export const sv: Translations = {
     title: "Advokat",
     name: "Anatoliy Sarnavskiy",
     subtitle: "Försvar i ekonomiska brott",
-    description: "Professionellt försvar mot tryck från utredare, åklagare, SBU och DBR. Specialisering: konstruktion och offentliga upphandlingar.",
+    description:
+      "Professionellt försvar mot tryck från utredare, åklagare, SBU och DBR. Specialisering: konstruktion och offentliga upphandlingar.",
     slogan: ["Snabbt.", "Konfidentiellt.", "Effektivt."],
     urgent: "Behöver akut en advokat",
     consultation: "Få konsultation",
@@ -26,7 +27,8 @@ export const sv: Translations = {
     items: [
       {
         title: "Skydd under husrannsakningar",
-        description: "Stöd och skydd under husrannsakningar och beslag av dokument",
+        description:
+          "Stöd och skydd under husrannsakningar och beslag av dokument",
       },
       {
         title: "Skydd under förhör",
@@ -34,7 +36,8 @@ export const sv: Translations = {
       },
       {
         title: "Försvarsstrategi",
-        description: "Utveckling av en omfattande försvarsstrategi för ditt företag",
+        description:
+          "Utveckling av en omfattande försvarsstrategi för ditt företag",
       },
       {
         title: "Omfattande företagsskydd",
@@ -63,7 +66,8 @@ export const sv: Translations = {
     items: [
       {
         title: "Byggfall",
-        description: "Skydd av entreprenör från anklagelser enligt artikel 191 CC",
+        description:
+          "Skydd av entreprenör från anklagelser enligt artikel 191 CC",
         result: "Fall stängt",
       },
       {
@@ -89,8 +93,10 @@ export const sv: Translations = {
     subtitle: "Användbara checklistor och guider för att skydda ditt företag",
     download: "Ladda ner PDF",
     getMaterial: "Få material",
-    description: "För att få material måste du lämna din e-post. Efter bekräftelse kommer du att få en nedladdningslänk.",
-    emailRequired: "För att ladda ner materialet, vänligen lämna din e-post. Nedladdningslänken kommer att skickas till din e-post.",
+    description:
+      "För att få material måste du lämna din e-post. Efter bekräftelse kommer du att få en nedladdningslänk.",
+    emailRequired:
+      "För att ladda ner materialet, vänligen lämna din e-post. Nedladdningslänken kommer att skickas till din e-post.",
   },
   contact: {
     title: "Kontakt",
@@ -110,22 +116,26 @@ export const sv: Translations = {
       {
         number: "1",
         title: "Du lämnar en förfrågan",
-        description: "Fyll i formuläret nedan med dina kontaktuppgifter och beskrivning av situationen",
+        description:
+          "Fyll i formuläret nedan med dina kontaktuppgifter och beskrivning av situationen",
       },
       {
         number: "2",
         title: "Vi klargör detaljer",
-        description: "Jag kommer att kontakta dig för att klargöra detaljer och diskutera situationen",
+        description:
+          "Jag kommer att kontakta dig för att klargöra detaljer och diskutera situationen",
       },
       {
         number: "3",
         title: "Handlingsplan och strategi",
-        description: "Vi utvecklar en omfattande försvarsstrategi och handlingsplan",
+        description:
+          "Vi utvecklar en omfattande försvarsstrategi och handlingsplan",
       },
       {
         number: "4",
         title: "Överenskommelse om format",
-        description: "Vi diskuterar samarbetsformatet: engångskonsultation eller kontinuerligt stöd",
+        description:
+          "Vi diskuterar samarbetsformatet: engångskonsultation eller kontinuerligt stöd",
       },
     ],
     leaveRequest: "Lämna en förfrågan",
@@ -147,11 +157,13 @@ export const sv: Translations = {
     send: "Skicka förfrågan",
     sending: "Skickar...",
     submit: "Skicka",
-    success: "Tack! Din förfrågan har skickats. Vi kommer att kontakta dig snart.",
+    success:
+      "Tack! Din förfrågan har skickats. Vi kommer att kontakta dig snart.",
     error: "Fel vid sändning. Försök igen eller ring oss direkt.",
     required: "obligatoriskt",
     invalidEmail: "Ogiltig e-post",
-    successMessage: "Förfrågan skickad framgångsrikt! Jag kommer att kontakta dig snart.",
+    successMessage:
+      "Förfrågan skickad framgångsrikt! Jag kommer att kontakta dig snart.",
     errorMessage: "Fel vid sändning. Försök igen eller ring direkt.",
   },
   about: {
@@ -169,37 +181,24 @@ export const sv: Translations = {
     },
     specialization: {
       title: "Specialisering",
-      text1: "Professionellt försvar i ekonomiska brott. Jag specialiserar mig på att skydda entreprenörer och chefer mot tryck från utredare, åklagare, SBU och DBR.",
-      text2: "Särskilt fokus på fall relaterade till konstruktion och offentlig upphandling.",
+      text1:
+        "Professionellt försvar i ekonomiska brott. Jag specialiserar mig på att skydda entreprenörer och chefer mot tryck från utredare, åklagare, SBU och DBR.",
+      text2:
+        "Särskilt fokus på fall relaterade till konstruktion och offentlig upphandling.",
     },
     approach: {
       title: "Arbetsmetod",
       text: "Varje fall för mig är en individuell approach och omfattande försvarsstrategi. Jag arbetar snabbt, konfidentiellt och effektivt och använder min erfarenhet för att uppnå de bästa resultaten för kunder.",
     },
   },
-  servicesPage: {
-    title: "Mina tjänster",
-    subtitle: "Omfattande professionellt försvar i ekonomiska brott och företagsstöd i komplexa juridiska situationer",
-  },
-  casesPage: {
-    title: "Framgångsrika fall",
-    subtitle: "Verkliga resultat av arbete och skydd av kundernas intressen",
-    problem: "Problem",
-    risks: "Risker",
-    actions: "Advokatens handlingar",
-    result: "Resultat",
-    critical: "Vad som var kritiskt viktigt",
-  },
-  blogPage: {
-    title: "Blogg",
-    subtitle: "Användbara artiklar och råd om försvar i ekonomiska brott",
-  },
   footer: {
-    description: "Professionellt försvar i ekonomiska brott. Snabbt. Konfidentiellt. Effektivt.",
+    description:
+      "Professionellt försvar i ekonomiska brott. Snabbt. Konfidentiellt. Effektivt.",
     menu: "Meny",
     services: "Tjänster",
     contact: "Kontakt",
-    copyright: "© {year} Advokat Anatoliy Sarnavskiy. Alla rättigheter förbehållna.",
+    copyright:
+      "© {year} Advokat Anatoliy Sarnavskiy. Alla rättigheter förbehållna.",
   },
   modal: {
     consultation: "Få konsultation",
@@ -216,6 +215,9 @@ export const sv: Translations = {
     consultation: "Konsultation",
   },
   servicesPage: {
+    title: "Mina tjänster",
+    subtitle:
+      "Omfattande professionellt försvar i ekonomiska brott och företagsstöd i komplexa juridiska situationer",
     allServices: "Alla tjänster",
     serviceDetails: "Detaljer",
     serviceItems: [
@@ -272,10 +274,19 @@ export const sv: Translations = {
     ],
   },
   casesPage: {
+    title: "Framgångsrika fall",
+    subtitle: "Verkliga resultat av arbete och skydd av kundernas intressen",
+    problem: "Problem",
+    risks: "Risker",
+    actions: "Advokatens handlingar",
+    result: "Resultat",
+    critical: "Vad som var kritiskt viktigt",
     cases: [
       {
-        problem: "Klient anklagades enligt artikel 191 CC för verksamhet inom konstruktion",
-        risks: "Artikel 191 CC - förskingring, försnillning. Möjligt straff upp till 8 års fängelse",
+        problem:
+          "Klient anklagades enligt artikel 191 CC för verksamhet inom konstruktion",
+        risks:
+          "Artikel 191 CC - förskingring, försnillning. Möjligt straff upp till 8 års fängelse",
         actions: [
           "Genomförde detaljerad analys av dokument och kundens verksamhet",
           "Identifierade processuella överträdelser av utredare",
@@ -283,10 +294,12 @@ export const sv: Translations = {
           "Bestred olagliga handlingar av utredare",
         ],
         result: "Fall stängt, anklagelser drogs tillbaka",
-        critical: "Kritiskt var snabb ingripande och korrekt försvarsstrategi från första dagarna",
+        critical:
+          "Kritiskt var snabb ingripande och korrekt försvarsstrategi från första dagarna",
       },
       {
-        problem: "Entreprenör förföljdes för deltagande i offentlig upphandling, husrannsakningar genomfördes",
+        problem:
+          "Entreprenör förföljdes för deltagande i offentlig upphandling, husrannsakningar genomfördes",
         risks: "Tryck från utredare, möjliga anklagelser enligt artikel 191 CC",
         actions: [
           "Stöd under husrannsakningar",
@@ -295,10 +308,12 @@ export const sv: Translations = {
           "Överklagande av olagliga beslut",
         ],
         result: "Anklagelser drogs tillbaka, fall stängt",
-        critical: "Viktigt var professionellt stöd under husrannsakningar och korrekt dokumentation av överträdelser",
+        critical:
+          "Viktigt var professionellt stöd under husrannsakningar och korrekt dokumentation av överträdelser",
       },
       {
-        problem: "Omfattande skydd av företag under inspektioner och tryck från brottsbekämpande myndigheter",
+        problem:
+          "Omfattande skydd av företag under inspektioner och tryck från brottsbekämpande myndigheter",
         risks: "Möjliga anklagelser om ekonomiska brott, tryck på företaget",
         actions: [
           "Genomförde risikorevision",
@@ -307,34 +322,41 @@ export const sv: Translations = {
           "Skydd av kundens intressen i alla skeden",
         ],
         result: "Risker minimerade, företaget fortsätter att verka",
-        critical: "Kritiskt var proaktivt tillvägagångssätt och omfattande försvarsstrategi",
+        critical:
+          "Kritiskt var proaktivt tillvägagångssätt och omfattande försvarsstrategi",
       },
     ],
   },
   blogPage: {
+    title: "Blogg",
+    subtitle: "Användbara artiklar och råd om försvar i ekonomiska brott",
     posts: [
       {
         slug: "yak-povodytys-pid-chas-obshuku",
         title: "Hur man beter sig under en husrannsakan",
-        excerpt: "Praktiska råd om beteende under husrannsakningar och beslag av dokument. Vad man kan och inte kan göra.",
+        excerpt:
+          "Praktiska råd om beteende under husrannsakningar och beslag av dokument. Vad man kan och inte kan göra.",
         category: "Husrannsakan",
       },
       {
         slug: "stattya-191-kk-shcho-potribno-znaty",
         title: "Artikel 191 CC: Vad du behöver veta",
-        excerpt: "Detaljerad analys av artikel 191 i Ukraina strafflag och sätt att skydda sig mot anklagelser.",
+        excerpt:
+          "Detaljerad analys av artikel 191 i Ukraina strafflag och sätt att skydda sig mot anklagelser.",
         category: "191 CC",
       },
       {
         slug: "derzhzakupivli-ta-ryzyky",
         title: "Offentlig upphandling och risker",
-        excerpt: "Hur man skyddar sitt företag när man deltar i anbud och undviker problem med brottsbekämpande myndigheter.",
+        excerpt:
+          "Hur man skyddar sitt företag när man deltar i anbud och undviker problem med brottsbekämpande myndigheter.",
         category: "Konstruktion/Anbud",
       },
       {
         slug: "yak-povodytys-pid-chas-dopytu",
         title: "Hur man beter sig under ett förhör",
-        excerpt: "Praktiska rekommendationer om beteende under förhör och skydd av dina rättigheter.",
+        excerpt:
+          "Praktiska rekommendationer om beteende under förhör och skydd av dina rättigheter.",
         category: "Förhör",
       },
     ],
@@ -343,15 +365,19 @@ export const sv: Translations = {
     materials: [
       {
         title: "10 skäl att kontakta en advokat för artikel 191 CC",
-        description: "Detaljerad checklista över skäl när professionell advokathjälp behövs",
+        description:
+          "Detaljerad checklista över skäl när professionell advokathjälp behövs",
       },
       {
         title: "Hur man beter sig under en husrannsakan",
-        description: "Praktisk guide om beteende under husrannsakningar och skydd av dina rättigheter",
+        description:
+          "Praktisk guide om beteende under husrannsakningar och skydd av dina rättigheter",
       },
       {
-        title: "Advokatens checklista för entreprenörer i offentlig upphandling",
-        description: "Omfattande checklista för entreprenörer som arbetar med offentlig upphandling",
+        title:
+          "Advokatens checklista för entreprenörer i offentlig upphandling",
+        description:
+          "Omfattande checklista för entreprenörer som arbetar med offentlig upphandling",
       },
     ],
   },
@@ -369,7 +395,8 @@ export const sv: Translations = {
     title: "Behöver akut",
     titleHighlight: "en advokat?",
     subtitle: "Försvar i ekonomiska brott",
-    description: "Professionellt försvar mot tryck från utredare, åklagare, SBU och DBR. Operativ hjälp 24/7.",
+    description:
+      "Professionellt försvar mot tryck från utredare, åklagare, SBU och DBR. Operativ hjälp 24/7.",
     urgent: "Behöver akut en advokat",
     callNow: "Ring nu",
     getConsultation: "Få konsultation",
@@ -394,5 +421,4 @@ export const sv: Translations = {
     description: "Sidan du letar efter finns inte.",
     backHome: "Tillbaka till startsidan",
   },
-};
-
+}
