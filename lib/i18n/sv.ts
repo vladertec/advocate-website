@@ -108,6 +108,7 @@ export const sv: Translations = {
     phone: "Telefon",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     workingHours: "Arbetstider",
     workingHoursText: "Tillgänglig 24/7 för akuta fall",
     sendMessage: "Skicka meddelande",
@@ -150,6 +151,7 @@ export const sv: Translations = {
     call: "Ring",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     getConsultation: "Få konsultation",
   },
   form: {

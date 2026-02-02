@@ -72,6 +72,7 @@ export interface Translations {
     phone: string
     email: string
     telegram: string
+    whatsapp: string
     workingHours: string
     workingHoursText: string
     sendMessage: string
@@ -112,6 +113,7 @@ export interface Translations {
     call: string
     email: string
     telegram: string
+    whatsapp: string
     getConsultation: string
   }
   form: {

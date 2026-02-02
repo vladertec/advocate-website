@@ -116,6 +116,7 @@ export const fr: Translations = {
     phone: "Téléphone",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     workingHours: "Heures de travail",
     workingHoursText: "Disponible 24/7 pour les cas urgents",
     sendMessage: "Envoyer un message",
@@ -158,6 +159,7 @@ export const fr: Translations = {
     call: "Appeler",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     getConsultation: "Obtenir une consultation",
   },
   form: {
