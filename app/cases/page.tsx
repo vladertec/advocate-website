@@ -1,18 +1,24 @@
-"use client";
+"use client"
 
-import CTASection from "@/components/CTASection";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import CTASection from "@/components/CTASection";
+// import { useLanguage } from "@/contexts/LanguageContext";
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 
 export default function CasesPage() {
-  const { t } = useLanguage();
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
+  // const { t } = useLanguage();
+  // const { ref, inView } = useInView({
+  //   threshold: 0.1,
+  //   triggerOnce: true,
+  // });
 
   return (
+    <div className="min-h-screen flex items-center justify-center">
+      <p className="text-gray-400">Сторінка тимчасово недоступна</p>
+    </div>
+  )
+
+  /* return (
     <>
       <section className="py-12 sm:py-16 md:py-20 pt-20 sm:pt-24 md:pt-32">
         <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
@@ -132,4 +138,5 @@ export default function CasesPage() {
       <CTASection />
     </>
   );
+  */
 }

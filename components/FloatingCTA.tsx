@@ -29,7 +29,7 @@ export default function FloatingCTA() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.3 }}
-            className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-center gap-3 px-4 py-3 bg-dark-700/95 backdrop-blur-sm border-t border-gold/20 shadow-2xl sm:hidden"
+            className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-center gap-3 px-4 py-3 bg-dark-700/95 backdrop-blur-sm border-t border-white/20 shadow-2xl sm:hidden"
           >
             <motion.a
               href={`tel:${process.env.NEXT_PUBLIC_PHONE || "+380XXXXXXXXX"}`}
@@ -52,7 +52,7 @@ export default function FloatingCTA() {
                   ease: "easeInOut",
                 },
               }}
-              className="flex-1 flex items-center justify-center gap-2 bg-gold text-dark-700 px-6 py-4 rounded-lg shadow-lg hover:bg-gold-600 transition-colors glow-gold-sm relative overflow-hidden font-semibold text-base"
+              className="flex-1 flex items-center justify-center gap-2 bg-white text-dark-700 px-6 py-4 rounded-lg shadow-lg hover:bg-gray-200 transition-colors  relative overflow-hidden font-semibold text-base"
               aria-label="Подзвонити"
             >
               <motion.div

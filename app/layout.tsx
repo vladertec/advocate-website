@@ -1,32 +1,34 @@
-import type { Metadata } from "next";
-import { Manrope, Cormorant_Garamond } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import FloatingCTA from "@/components/FloatingCTA";
-import ScrollToTop from "@/components/ScrollToTop";
-import { ToastProvider } from "@/components/ToastProvider";
-import { LanguageProvider } from "@/contexts/LanguageContext";
-import { generatePersonSchema, generateLegalServiceSchema } from "./schema";
+import type { Metadata } from "next"
+import { Manrope, Cormorant_Garamond } from "next/font/google"
+import "./globals.css"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import FloatingCTA from "@/components/FloatingCTA"
+import ScrollToTop from "@/components/ScrollToTop"
+import { ToastProvider } from "@/components/ToastProvider"
+import { LanguageProvider } from "@/contexts/LanguageContext"
+import { generatePersonSchema, generateLegalServiceSchema } from "./schema"
 
-const manrope = Manrope({ 
+const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
   variable: "--font-manrope",
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
-});
+})
 
-const cormorant = Cormorant_Garamond({ 
+const cormorant = Cormorant_Garamond({
   subsets: ["latin", "cyrillic"],
   variable: "--font-cormorant",
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
-});
+})
 
 export const metadata: Metadata = {
   title: "Адвокат Анатолій Сарнавський | Захист по економічним злочинам",
-  description: "Професійний захист по економічним злочинам. Досвід роботи зі слідчими, прокуратурою, СБУ, ДБР. Фокус на будівництві та держзакупівлях. Оперативно. Конфіденційно. Ефективно.",
-  keywords: "адвокат, економічні злочини, захист, обшук, допит, стаття 191, будівництво, тендери",
+  description:
+    "Професійний захист по економічним злочинам. Досвід роботи зі слідчими, прокуратурою, СБУ, ДБР. Фокус на будівництві та держзакупівлях. Оперативно. Конфіденційно. Ефективно.",
+  keywords:
+    "адвокат, економічні злочини, захист, обшук, допит, стаття 191, будівництво, тендери",
   authors: [{ name: "Анатолій Сарнавський" }],
   openGraph: {
     title: "Адвокат Анатолій Сарнавський",
@@ -55,15 +57,15 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-  const personSchema = generatePersonSchema();
-  const legalServiceSchema = generateLegalServiceSchema();
+  const personSchema = generatePersonSchema()
+  const legalServiceSchema = generateLegalServiceSchema()
 
   return (
     <html lang="uk" className={`${manrope.variable} ${cormorant.variable}`}>
@@ -74,10 +76,12 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(legalServiceSchema),
+          }}
         />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-dark-600">
         <LanguageProvider>
           <ToastProvider>
             <Header />
@@ -89,6 +93,5 @@ export default function RootLayout({
         </LanguageProvider>
       </body>
     </html>
-  );
+  )
 }
-

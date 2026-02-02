@@ -63,12 +63,12 @@ export default function ConsultationModal({
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="bg-dark-700 border border-gold/30 rounded-lg p-4 sm:p-5 md:p-6 lg:p-8 max-w-2xl w-full mx-2 sm:mx-4 max-h-[95vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl relative"
+            className="bg-dark-600 border border-white/30 rounded-lg p-4 sm:p-5 md:p-6 lg:p-8 max-w-2xl w-full mx-2 sm:mx-4 max-h-[95vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Decorative Elements */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full blur-2xl" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gold/5 rounded-full blur-2xl" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
 
             <div className="relative z-10">
               <div className="flex justify-between items-center mb-4 sm:mb-5 md:mb-6">
@@ -76,7 +76,7 @@ export default function ConsultationModal({
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-xl sm:text-2xl md:text-3xl font-serif text-gold"
+                  className="text-xl sm:text-2xl md:text-3xl font-serif text-white"
                 >
                   {t.modal.consultation}
                 </motion.h2>
@@ -84,7 +84,7 @@ export default function ConsultationModal({
                   whileHover={{ scale: 1.1, rotate: 90 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={onClose}
-                  className="text-gray-400 hover:text-gold transition-colors p-1.5 sm:p-2 rounded-lg hover:bg-gold/10"
+                  className="text-gray-400 hover:text-white transition-colors p-1.5 sm:p-2 rounded-lg hover:bg-white/10"
                   aria-label="Закрити"
                 >
                   <X size={20} className="sm:w-6 sm:h-6" />

@@ -1,19 +1,19 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { ArrowRight, CheckCircle } from "lucide-react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useLanguage } from "@/contexts/LanguageContext";
+import Link from "next/link"
+import { ArrowRight, CheckCircle } from "lucide-react"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { useLanguage } from "@/contexts/LanguageContext"
 
-const icons = ["🏗️", "📋", "🛡️"];
+const icons = ["🏗️", "📋", "🛡️"]
 
 export default function CasesSection() {
-  const { t } = useLanguage();
+  const { t } = useLanguage()
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true,
-  });
+  })
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -24,7 +24,7 @@ export default function CasesSection() {
         delayChildren: 0.1,
       },
     },
-  };
+  }
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20, scale: 0.95 },
@@ -38,20 +38,20 @@ export default function CasesSection() {
         damping: 12,
       },
     },
-  };
+  }
 
   return (
     <section ref={ref} className="py-12 sm:py-16 md:py-20 relative">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/5 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent" />
 
       <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ 
+          transition={{
             duration: 0.7,
-            ease: [0.25, 0.46, 0.45, 0.94]
+            ease: [0.25, 0.46, 0.45, 0.94],
           }}
           className="text-center mb-8 sm:mb-10 md:mb-12"
         >
@@ -72,38 +72,44 @@ export default function CasesSection() {
               key={caseItem.id}
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-dark-600 border border-gray-800 rounded-lg p-4 sm:p-5 md:p-6 hover:border-gold/50 transition-all hover:shadow-gold-glow-sm group relative overflow-hidden"
+              className="bg-dark-600 border border-gray-800 rounded-lg p-4 sm:p-5 md:p-6 hover:border-white/50 transition-all hover:shadow-lg group relative overflow-hidden"
             >
               {/* Background Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative z-10">
                 {/* Icon */}
                 <motion.div
                   initial={{ scale: 0, rotate: -180 }}
                   animate={inView ? { scale: 1, rotate: 0 } : {}}
-                  transition={{ delay: index * 0.1, type: "spring", stiffness: 200 }}
+                  transition={{
+                    delay: index * 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                  }}
                   className="text-3xl sm:text-4xl mb-3 sm:mb-4"
                 >
                   {icons[index]}
                 </motion.div>
 
-                <h3 className="text-lg sm:text-xl font-serif text-white mb-2 group-hover:text-gold transition-colors">
+                <h3 className="text-lg sm:text-xl font-serif text-white mb-2 group-hover:text-white transition-colors">
                   {caseItem.title}
                 </h3>
-                <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">{caseItem.description}</p>
+                <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">
+                  {caseItem.description}
+                </p>
                 <div className="flex items-center justify-between">
                   <motion.span
                     initial={{ opacity: 0, y: 5 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ 
+                    transition={{
                       delay: index * 0.08 + 0.25,
                       duration: 0.5,
-                      ease: [0.25, 0.46, 0.45, 0.94]
+                      ease: [0.25, 0.46, 0.45, 0.94],
                     }}
                     className="flex items-center space-x-2 text-gold font-semibold"
                   >
-                    <CheckCircle size={18} />
+                    <CheckCircle size={18} className="text-gold" />
                     <span>{caseItem.result}</span>
                   </motion.span>
                 </div>
@@ -118,19 +124,19 @@ export default function CasesSection() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ 
+          transition={{
             delay: 0.6,
             duration: 0.6,
-            ease: [0.25, 0.46, 0.45, 0.94]
+            ease: [0.25, 0.46, 0.45, 0.94],
           }}
           className="text-center mt-8 sm:mt-10 md:mt-12"
         >
           <Link
             href="/cases"
-            className="inline-flex items-center space-x-2 px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-gold text-gold font-semibold rounded-lg hover:bg-gold/10 transition-colors group relative overflow-hidden text-sm sm:text-base"
+            className="inline-flex items-center space-x-2 px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors group relative overflow-hidden text-sm sm:text-base"
           >
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-gold/10 via-gold/20 to-gold/10"
+              className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10"
               animate={{
                 x: ["-100%", "100%"],
               }}
@@ -147,17 +153,17 @@ export default function CasesSection() {
             <motion.div
               className="relative z-10"
               animate={{ x: [0, 4, 0] }}
-              transition={{ 
+              transition={{
                 duration: 2,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             >
-              <ArrowRight size={20} />
+              <ArrowRight size={20} className="text-gold" />
             </motion.div>
           </Link>
         </motion.div>
       </div>
     </section>
-  );
+  )
 }

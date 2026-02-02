@@ -2,14 +2,15 @@ export const CONTACT_INFO = {
   phone: "+380XXXXXXXXX",
   email: "sarnavsk2001@gmail.com",
   telegram: "@your_telegram",
+  whatsapp: "+380XXXXXXXXX",
   viber: "+380XXXXXXXXX",
-};
+}
 
 export const EMAILJS_CONFIG = {
   serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_a7nlbge",
   templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_a21vh6v",
   publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "b-9jRpofu0_GJSdEI",
-};
+}
 
 export const SERVICES = [
   {
@@ -36,7 +37,7 @@ export const SERVICES = [
     slug: "obshuky-vyimky",
     description: "Супровід під час обшуків та вилучень",
   },
-];
+]
 
 export const ADVANTAGES = [
   {
@@ -59,5 +60,4 @@ export const ADVANTAGES = [
     description: "Колишній слідчий",
     icon: "briefcase",
   },
-];
-
+]

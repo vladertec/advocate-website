@@ -106,6 +106,7 @@ export const uk: Translations = {
     phone: "Телефон",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     workingHours: "Режим роботи",
     workingHoursText: "Доступний 24/7 для термінових випадків",
     sendMessage: "Надішліть повідомлення",
@@ -177,6 +178,7 @@ export const uk: Translations = {
     call: "Подзвонити",
     email: "Email",
     telegram: "Telegram",
+    whatsapp: "WhatsApp",
     getConsultation: "Отримати консультацію",
   },
   form: {

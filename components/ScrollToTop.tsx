@@ -1,31 +1,31 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUp } from "lucide-react";
+import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { ArrowUp } from "lucide-react"
 
 export default function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 400) {
-        setIsVisible(true);
+        setIsVisible(true)
       } else {
-        setIsVisible(false);
+        setIsVisible(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+    window.addEventListener("scroll", toggleVisibility)
+    return () => window.removeEventListener("scroll", toggleVisibility)
+  }, [])
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    });
-  };
+    })
+  }
 
   return (
     <AnimatePresence>
@@ -40,10 +40,9 @@ export default function ScrollToTop() {
           className="fixed bottom-24 right-6 z-40 bg-gold text-dark-700 p-3 rounded-full shadow-lg hover:bg-gold-600 transition-colors glow-gold-sm lg:bottom-8"
           aria-label="Прокрутити вгору"
         >
-          <ArrowUp size={24} />
+          <ArrowUp size={24} className="text-dark-700" />
         </motion.button>
       )}
     </AnimatePresence>
-  );
+  )
 }
-

@@ -1,12 +1,11 @@
 "use client"
 
-import { useState } from "react"
 import { Download, FileText } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import CTASection from "@/components/CTASection"
-import ConsultationModal from "@/components/ConsultationModal"
 import { useLanguage } from "@/contexts/LanguageContext"
+import ConsultationModal from "./ConsultationModal"
+import { useState } from "react"
 
 const materialFiles = [
   "/materials/10-prichyn-191-kk.pdf",
@@ -38,7 +37,7 @@ const itemVariants = {
   },
 }
 
-export default function MaterialsPage() {
+export default function MaterialsSection() {
   const { t } = useLanguage()
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -54,8 +53,11 @@ export default function MaterialsPage() {
 
   return (
     <>
-      <section className="py-12 sm:py-16 md:py-20 pt-20 sm:pt-24 md:pt-32 bg-dark-600">
-        <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
+      <section
+        ref={ref}
+        className="py-12 sm:py-16 md:py-20 bg-dark-600 relative overflow-hidden"
+      >
+        <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -65,31 +67,20 @@ export default function MaterialsPage() {
             }}
             className="text-center mb-8 sm:mb-10 md:mb-12"
           >
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-white mb-3 sm:mb-4">
               {t.materials.title}
-            </h1>
-            <motion.div
-              initial={{ width: 0 }}
-              animate={inView ? { width: 80 } : {}}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="h-0.5 sm:h-1 bg-gold mx-auto"
-            ></motion.div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={inView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-gray-400 mt-4 sm:mt-5 md:mt-6 text-base sm:text-lg max-w-2xl mx-auto"
-            >
+            </h2>
+            <div className="h-0.5 sm:h-1 w-16 sm:w-20 bg-gold mx-auto"></div>
+            <p className="text-gray-400 mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
               {t.materials.subtitle}
-            </motion.p>
+            </p>
           </motion.div>
 
           <motion.div
-            ref={ref}
             variants={containerVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 max-w-7xl mx-auto"
           >
             {t.materialsPage.materials.map((material, index) => (
               <motion.div
@@ -100,23 +91,23 @@ export default function MaterialsPage() {
                   scale: 1.02,
                   transition: { duration: 0.3, ease: "easeOut" },
                 }}
-                className="bg-dark-600 border border-gray-800 rounded-lg p-6 hover:border-white transition-all duration-300 group relative overflow-hidden"
+                className="bg-dark-600 border border-gray-800 rounded-lg p-5 sm:p-6 md:p-7 lg:p-8 hover:border-white/50 transition-all duration-300 group relative overflow-hidden h-full flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative z-10">
-                  <div className="flex items-start space-x-4 mb-4">
+                <div className="relative z-10 flex flex-col flex-1">
+                  <div className="flex items-start space-x-3 sm:space-x-4 mb-3 sm:mb-4">
                     <motion.div
                       whileHover={{ rotate: 360 }}
                       transition={{ duration: 0.5 }}
-                      className="bg-white/10 p-3 rounded-lg group-hover:bg-white/5 transition-colors duration-300"
+                      className="bg-white/10 p-2 sm:p-3 rounded-lg group-hover:bg-white/5 transition-colors duration-300 flex-shrink-0"
                     >
-                      <FileText className="text-gold" size={24} />
+                      <FileText className="text-gold w-5 h-5 sm:w-6 sm:h-6" />
                     </motion.div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-serif text-white mb-2 group-hover:text-white transition-colors duration-300">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg md:text-xl font-serif text-white mb-2 group-hover:text-white transition-colors duration-300">
                         {material.title}
                       </h3>
-                      <p className="text-gray-400 text-sm">
+                      <p className="text-gray-400 text-xs sm:text-sm">
                         {material.description}
                       </p>
                     </div>
@@ -131,44 +122,20 @@ export default function MaterialsPage() {
                       transition: { duration: 0.2 },
                     }}
                     whileTap={{ scale: 0.97 }}
-                    className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-white/10 hover:bg-white/5 border border-white/30 rounded-lg text-white font-semibold transition-all duration-300 group relative overflow-hidden"
+                    className="mt-auto w-full flex items-center justify-center space-x-2 px-3 sm:px-4 py-2 sm:py-2.5 md:py-3 bg-white/10 hover:bg-white/5 border border-white/30 rounded-lg text-white font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base"
                   >
-                    <motion.div
-                      className="absolute inset-0 bg-white/5"
-                      initial={{ x: "-100%" }}
-                      whileHover={{ x: "100%" }}
-                      transition={{ duration: 0.5 }}
+                    <Download
+                      size={16}
+                      className="sm:w-4 sm:h-4 md:w-5 md:h-5 text-gold flex-shrink-0"
                     />
-                    <motion.div
-                      animate={{ y: [0, -3, 0] }}
-                      transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                      }}
-                    >
-                      <Download size={18} className="relative z-10 text-gold" />
-                    </motion.div>
-                    <span className="relative z-10">
-                      {t.materials.download}
-                    </span>
+                    <span>{t.materials.download}</span>
                   </motion.button>
                 </div>
+
+                {/* Shine Effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
               </motion.div>
             ))}
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="mt-12 max-w-2xl mx-auto"
-          >
-            <div className="bg-dark-600 border border-white/30 rounded-lg p-6">
-              <p className="text-gray-300 text-center">
-                {t.materials.description}
-              </p>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -178,8 +145,6 @@ export default function MaterialsPage() {
         onClose={() => setIsModalOpen(false)}
         materialFile={selectedMaterial || undefined}
       />
-
-      <CTASection />
     </>
   )
 }
