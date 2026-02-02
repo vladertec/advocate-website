@@ -69,18 +69,21 @@ export const en: Translations = {
     allCases: "All Cases",
     items: [
       {
+        id: "case-1",
         title: "Construction Case",
         description:
           "Protection of entrepreneur from charges under Article 191 CC",
         result: "Case Closed",
       },
       {
+        id: "case-2",
         title: "Public Procurement Case",
         description:
           "Protection from pressure from investigators during searches",
         result: "Charges Dropped",
       },
       {
+        id: "case-3",
         title: "Comprehensive Business Protection",
         description: "Support of enterprise during inspections",
         result: "Risks Minimized",

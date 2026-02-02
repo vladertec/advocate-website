@@ -1,20 +1,21 @@
-"use client";
+"use client"
 
-import { X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import ConsultationForm from "./ConsultationForm";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { X } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
+import ConsultationForm from "./ConsultationForm"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 interface ConsultationModalProps {
-  isOpen: boolean;
-  onClose: () => void;
+  isOpen: boolean
+  onClose: () => void
+  materialFile?: string
 }
 
 const backdropVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
   exit: { opacity: 0 },
-};
+}
 
 const modalVariants = {
   hidden: { opacity: 0, scale: 0.8, y: 50 },
@@ -36,11 +37,15 @@ const modalVariants = {
       duration: 0.2,
     },
   },
-};
+}
 
-export default function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
-  const { t } = useLanguage();
-  if (!isOpen) return null;
+export default function ConsultationModal({
+  isOpen,
+  onClose,
+  materialFile,
+}: ConsultationModalProps) {
+  const { t } = useLanguage()
+  if (!isOpen) return null
 
   return (
     <AnimatePresence>
@@ -97,5 +102,5 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
         </motion.div>
       )}
     </AnimatePresence>
-  );
+  )
 }

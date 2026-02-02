@@ -64,16 +64,19 @@ export const pl: Translations = {
     allCases: "Wszystkie sprawy",
     items: [
       {
+        id: "case-1",
         title: "Sprawa budowlana",
         description: "Ochrona przedsiębiorcy przed zarzutami z art. 191 KK",
         result: "Sprawa zamknięta",
       },
       {
+        id: "case-2",
         title: "Sprawa zamówień publicznych",
         description: "Ochrona przed presją śledczych podczas przeszukań",
         result: "Zarzuty wycofane",
       },
       {
+        id: "case-3",
         title: "Kompleksowa ochrona biznesu",
         description: "Wsparcie przedsiębiorstwa podczas kontroli",
         result: "Ryzyka zminimalizowane",

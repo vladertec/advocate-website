@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        sans: ["var(--font-manrope)", "Inter", "system-ui", "sans-serif"],
+        serif: [
+          "var(--font-cormorant)",
+          "Playfair Display",
+          "Georgia",
+          "serif",
+        ],
       },
       colors: {
         gold: {
@@ -36,10 +41,6 @@ const config: Config = {
           700: "#000000",
         },
       },
-      fontFamily: {
-        serif: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"],
-      },
       boxShadow: {
         "gold-glow": "0 0 20px rgba(255, 215, 0, 0.3)",
         "gold-glow-sm": "0 0 10px rgba(255, 215, 0, 0.2)",
@@ -47,6 +48,5 @@ const config: Config = {
     },
   },
   plugins: [],
-};
-export default config;
-
+}
+export default config

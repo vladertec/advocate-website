@@ -67,17 +67,20 @@ export const de: Translations = {
     allCases: "Alle Fälle",
     items: [
       {
+        id: "case-1",
         title: "Baufall",
         description:
           "Schutz des Unternehmers vor Anschuldigungen nach Artikel 191 StGB",
         result: "Fall geschlossen",
       },
       {
+        id: "case-2",
         title: "Öffentliches Beschaffungswesen",
         description: "Schutz vor Druck von Ermittlern während Durchsuchungen",
         result: "Anschuldigungen fallengelassen",
       },
       {
+        id: "case-3",
         title: "Umfassender Unternehmensschutz",
         description: "Begleitung des Unternehmens während Inspektionen",
         result: "Risiken minimiert",

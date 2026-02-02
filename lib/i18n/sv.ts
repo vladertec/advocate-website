@@ -65,17 +65,20 @@ export const sv: Translations = {
     allCases: "Alla fall",
     items: [
       {
+        id: "case-1",
         title: "Byggfall",
         description:
           "Skydd av entreprenör från anklagelser enligt artikel 191 CC",
         result: "Fall stängt",
       },
       {
+        id: "case-2",
         title: "Offentlig upphandling",
         description: "Skydd mot tryck från utredare under husrannsakningar",
         result: "Anklagelser drogs tillbaka",
       },
       {
+        id: "case-3",
         title: "Omfattande företagsskydd",
         description: "Stöd för företag under inspektioner",
         result: "Risker minimerade",

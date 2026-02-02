@@ -71,18 +71,21 @@ export const fr: Translations = {
     allCases: "Tous les cas",
     items: [
       {
+        id: "case-1",
         title: "Affaire de construction",
         description:
           "Protection de l'entrepreneur contre les accusations selon l'article 191 CC",
         result: "Affaire classée",
       },
       {
+        id: "case-2",
         title: "Affaire de marchés publics",
         description:
           "Protection contre la pression des enquêteurs lors des perquisitions",
         result: "Accusations abandonnées",
       },
       {
+        id: "case-3",
         title: "Protection complète de l'entreprise",
         description: "Accompagnement de l'entreprise lors des inspections",
         result: "Risques minimisés",

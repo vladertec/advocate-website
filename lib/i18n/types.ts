@@ -45,6 +45,7 @@ export interface Translations {
     subtitle: string
     allCases: string
     items: Array<{
+      id: string
       title: string
       description: string
       result: string
@@ -54,6 +55,7 @@ export interface Translations {
     title: string
     allPosts: string
     backToBlog: string
+    recentPosts: string
   }
   materials: {
     title: string
@@ -123,6 +125,9 @@ export interface Translations {
     error: string
     required: string
     invalidEmail: string
+    successMessage: string
+    errorMessage: string
+    submit: string
   }
   about: {
     title: string
@@ -212,5 +217,10 @@ export interface Translations {
     howItWorks: string
     whatToDo: string
     faq: string
+  }
+  common: {
+    readMore: string
+    details: string
+    back: string
   }
 }
